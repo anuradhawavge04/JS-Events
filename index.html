@@ -1,68 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>All Js Events</title>
     <style>
-        body{
-            background-color: #ff66ff;
-        }
-        .cards-container{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            justify-items: center;
-            flex-wrap: wrap;
-            }
+      body {
+        background-color: #ff66ff;
+      }
+      .cards-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-items: center;
+        flex-wrap: wrap;
+      }
 
-          .card1{
-            height: 300px;
-            width: 250px;
-            background-color:#fff ;
-            margin: 10px auto;
-            padding: 10px;
-            border-radius: 10px;
-          }  
+      .card1 {
+        height: 300px;
+        width: 250px;
+        background-color: #fff;
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 10px;
+      }
 
-          .card2{
-            height: 300px;
-            width: 250px;
-            background-color:#fff ;
-            margin: 10px auto;
-            padding: 10px;
-            border-radius: 10px;
-          }
+      .card2 {
+        height: 300px;
+        width: 250px;
+        background-color: #fff;
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 10px;
+      }
 
-          .card3{
-            height: 300px;
-            width: 250px;
-            background-color:#fff ;
-            margin: 10px auto;
-            padding: 10px;
-            border-radius: 10px;
-          }
+      .card3 {
+        height: 300px;
+        width: 250px;
+        background-color: #fff;
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 10px;
+      }
 
-          .card4{
-            height: 300px;
-            width: 250px;
-            background-color:#fff ;
-            margin: 10px auto;
-            padding: 10px;
-            border-radius: 10px;
-          }
+      .card4 {
+        height: 300px;
+        width: 250px;
+        background-color: #fff;
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 10px;
+      }
 
+      .emoji {
+        display: block;
+        margin: 10px auto;
+      }
+
+      .btn-1 {
+        display: block;
+        height: 40px;
+        width: 100px;
+        font-size: 20px;
+        margin: 10px auto;
+        margin-top: 50px;
+        cursor: pointer;
+      }
     </style>
-</head>
-<body>
-   
+  </head>
+  <body>
     <div class="cards-container">
-        <div class="card1"></div>
-        <div class="card2"></div>
-        <div class="card3"></div>
-        <div class="card4"></div>
-
+      <div class="card1">
+        <img src="happy.png" class="emoji" id="happy-img" />
+        <button class="btn-1" onclick="happy()">Fill Me</button>
+      </div>
+      <div class="card2">
+        <img src="smily.png" class="emoji" />
+        <button class="btn-1">Fill Me</button>
+      </div>
     </div>
-    <script></script>
-</body>
+    <script>
+      function happy() {
+        const happyElement = document.getElementById("happy-img");
+        happyElement.src = "./smile.png";
+      }
+    </script>
+  </body>
 </html>
